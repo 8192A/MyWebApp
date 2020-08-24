@@ -1,0 +1,42 @@
+<%- include("partials/header") %>
+
+<div class="jumbotron">
+		<div id="intro" class="text-center">
+			<h2>
+				Project that I have created since middle school!
+			</h2>
+			<h5>
+				Lots to be updated
+			</h5>
+		</div>
+</div>
+
+<div class="container">
+	<section class="container-fluid px-0">
+		<div id="projects" class="row text-center" style="display:flex; flex-wrap:wrap;">
+			<% projects.forEach(function(project) { %>
+				<div id="project" class="container col-lg-4">			
+					<div class="center">
+						<div class="caption">
+							<img id="projectImg" src= "<%= project.img %>" class="img-thumbnail">
+						<div class="caption">
+							<h4>
+								<%= project.name%>
+							</h4>
+							<p>
+								<%= project.intro%>
+							</p>
+							<% if (project.name.localeCompare("Naukri Data Visualization and Analysis") ==0) {%>
+								   <a href=<%= project.page%>>Link to Kaggle</a>
+							<%	   }%>
+							<a href="/projects/<%=project._id%>">Read More</a>
+						</div>
+						
+						</div>
+					</div>
+				</div>
+			<% }); %>
+		</div>
+	</section>
+</div>
+<%- include("partials/footer") %>

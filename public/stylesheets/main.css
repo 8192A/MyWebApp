@@ -1,0 +1,19 @@
+body {
+	background: #FFF8DC;
+}
+
+#mainNavbar {
+	font-size: 1.5 rem;
+	font-weight: 100;
+}
+
+#mainNavbar a {
+	color: #00BFFF;
+}
+
+#mainNavbar .nav-link{
+	color: #AFEEEE;
+}
+#mainNavbar .nav-link:hover{
+	color: #00BFFF;
+}

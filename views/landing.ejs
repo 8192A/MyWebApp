@@ -1,0 +1,59 @@
+<%- include("partials/header") %>
+
+<div class="jumbotron">
+	<div class="row align-items-center">
+		<div class="col-lg-6">
+			<img id="profilephoto" class="thumbnail col-12" src="/img/webprofile.jpg">
+		</div>
+		<div id="intro" class="col-lg-6 text-center">
+			<h4>
+				This is me!
+			</h4>
+			<h2>
+				韩圣楠 Han Shengnan
+			</h2>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	
+</div>
+<div class="container">
+	<section class="container-fluid px-0">
+		<% educations.forEach(function(education) { %>
+			<div class="row align-items-center">
+				<div class="container col-lg-4">
+					<img id="eduImg" src="<%= education.img%>">
+				</div>
+				<div class="container col-lg-4 text-left">
+					<h3><%= education.name%></h3>
+					<%=education.intro%>
+				</div>
+			</div>
+		<% }); %>
+
+	</section>
+</div>
+
+<div class="container">
+	<h2>
+		Version Log
+	</h2>
+	<h4>
+		Ver 1.0
+	</h4>
+	<h5>
+		What's new?
+	</h5>
+	<ul>
+		<li>Change landing page from project + profile to profile + education</li>
+		<li>Add project pages to simplify landing pages</li>
+		<li>Add individual display pages for projects</li>
+		<li>Add resume downlowds function</li>
+		<li>Change landing page color(will add more personal photo later on)</li>
+	</ul>
+</div>
+
+
+<%- include("partials/footer") %>

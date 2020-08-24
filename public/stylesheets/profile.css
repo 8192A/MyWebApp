@@ -1,0 +1,35 @@
+/* #profilephoto {
+	clip-path:inset(20% 0% 20% 20%);
+}
+ */
+#eduImag{
+	height:auto;
+	width:auto;
+}
+.jumbotron {
+	background: #AFEEEE;
+}
+#intro{
+	color:white;
+}
+
+/* #projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+#project {
+	margin-bottom: 10px;
+}
+#thumbnails {
+    border:0;
+	margin: 10px 10px 10px 10px;
+	background-position: center;
+}
+#thumbnails a{
+    display:block;
+    padding:10px;
+    background:red;
+}
+#thumbnails img{
+    width:90%;
+} */
